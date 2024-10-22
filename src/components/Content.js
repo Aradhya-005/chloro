@@ -7,7 +7,7 @@ import OrganicCream from "../../public/assets/jar-of-organic-skin-care-mandarin-
 function Content() {
   return (
     <>
-      <div className="flex flex-row items-center justify-center h-[700px] pt-40 pb-32 bg-[#FDF5F3] px-12">
+      <div className="flex flex-row items-center justify-center h-[710px] pt-40 pb-32 bg-[#FDF5F3] px-12">
         {/* First column with Asset 1 and Organic Cream */}
         <div className="relative flex-1 flex items-center justify-center">
           {/* Background div for Asset 1 */}
@@ -32,8 +32,8 @@ function Content() {
         </div>
 
         {/* Center text column */}
-        <div className="px-10 text-center flex-1 flex flex-col justify-center relative">
-          <p className="font-montserrat text-[16px] font-normal tracking-wider">
+        <div className=" text-center flex-1 flex flex-col justify-center relative">
+          <p className=" text-[18px] font-normal tracking-wide">
             Alive every moment.
           </p>
           <h1 className="font-cormorantGaramond text-[55px] tracking-wider text-[#023A15]">
@@ -51,13 +51,13 @@ function Content() {
                 top: "20px", // Adjust the top position to shift the background image down
               }}
             >
-              <h1 className="absolute left-0 right-0 flex items-center justify-center font-cormorant text-[55px] tracking-wider text-[#023A15]">
+              <h1 className="absolute left-0 right-0 flex items-center justify-center font-cormorantGaramond text-[55px] tracking-wider text-[#023A15]">
                 you.
               </h1>
             </div>
           </div>
 
-          <p className="py-9 font-montserrat font-light text-[17px] leading-9 text-[#023A15] tracking-wider">
+          <p className="py-9   font-[25px] leading-9 text-[#023A15] tracking-wide">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vitae
             rutrum neque. Duis tincidunt euismod aliquam.
           </p>

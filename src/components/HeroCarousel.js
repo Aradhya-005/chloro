@@ -42,13 +42,13 @@ export default function HeroCarousel() {
           style={{ transform: `translateX(-${currentIndex * 100}%)` }}
         >
           {images.map((group, index) => (
-            <div key={index} className="min-w-full flex justify-around">
+            <div key={index} className="min-w-full flex justify-around mb-4">
               {group.map((image, imgIndex) => (
                 <div key={imgIndex} className="w-1/2 p-2">
                   <Image
                     src={image}
-                    width={330}
-                    height={501}
+                    width={200}
+                    height={300}
                     style={{ borderRadius: '300px 300px 0px 0px' }}
                     alt={`Slide image ${imgIndex + 1}`}
                     className="object-cover w-full h-auto rounded-[300px 300px 0px 0px]"
