@@ -73,18 +73,19 @@ function Services() {
                 height={280}
                 style={{ borderRadius: "300px 300px 0px 0px" }}
               />
-              <div className="shadow-lg rounded-lg bg-white p-8 w-full max-w-[360px] -mt-14 justify-center items-center">
-                {" "}
+              <div className="shadow-lg rounded-lg bg-white p-8 w-full max-w-[360px] text-center -mt-14 ">
+             
                 {/* Smaller width for the text box */}
-                <h1 className="text-3xl  font-cormorantGaramond font-thin text-center text-[#023A15]">
+                <h1 className="text-3xl  font-cormorantGaramond font-thin  text-[#023A15]">
                   {service.title}
                 </h1>
-                <p className="text-center mb-4 text-[18px] py-6">
+                <p className=" mb-4 text-[18px] py-6">
                   {service.description}
                 </p>
                 <Link
                   href={service.link}
-                  className="text-[#319E48] text-[16px] underline  uppercase font-semibold  "
+                  style={{justifyContent:'center', alignItems:'center'}}
+                  className="text-[#319E48] text-[15px] underline  uppercase font-semibold  underline-offset-4 "
                 >
                   Learn more &#8594;
                 </Link>
@@ -115,9 +116,17 @@ function Services() {
           </div>
 
           {/* Div positioned below the green div */}
-          <div className="absolute w-[520px] h-[180px] bg-transparent bottom-20 left-[908px] px-24 shadow-lg">
-            yfyuf
-          </div>
+          {/* <div className="absolute w-[520px] h-[180px] bg-transparent bottom-20 left-[908px] px-24 shadow-lg flex flex-row gap-7 font-montserrat">
+          <span className="py-12">
+            <p className="text-[60px]">955+</p>
+            <p>Happy Customer</p>
+          </span>
+          <span className="py-12">
+          <p className="text-[60px]">240+</p>
+          <p>Positive Review
+          </p>
+          </span>
+          </div> */}
 
           {/* Image at the top-left corner of the main image (Asset_1) */}
           <div
@@ -134,6 +143,7 @@ function Services() {
               backgroundImage: `url(${Asset_2.src})`,
             }}
           />
+         
         </div>
       </section>
     </>

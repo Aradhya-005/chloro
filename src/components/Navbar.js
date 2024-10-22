@@ -6,7 +6,7 @@ import { FaSearch, FaBars, FaChevronDown } from "react-icons/fa"; // Importing i
 function Navbar() {
   return (
     <>
-      <nav className="bg-[#023A15] flex flex-row justify-between px-44 py-7 items-center text-white font-medium text-[16px]">
+      <nav className="bg-[#023A15] flex flex-row justify-between px-44 py-10 items-center text-white font-medium text-[16px]">
         {/* Logo */}
         <div className="w-24">
           <Image src={Logo} alt="logo" />
@@ -26,7 +26,7 @@ function Navbar() {
             <Link href="#" className="flex items-center gap-2">
               Services <FaChevronDown />
             </Link>
-            <ul className="absolute hidden group-hover:block bg-white text-black py-2 mt-1 w-44">
+            <ul className="absolute hidden group-hover:block bg-white text-black py-2 mt-1 w-44 z-10">
               <li className="px-4 py-2 hover:text-[#319E48]">
                 <Link href="/services/service1">Service </Link>
               </li>
@@ -41,7 +41,7 @@ function Navbar() {
             <Link href="#" className="flex items-center gap-2">
               Pages <FaChevronDown />
             </Link>
-            <ul className="absolute hidden group-hover:block bg-white text-black py-2 mt-1 w-44">
+            <ul className="absolute hidden group-hover:block bg-white text-black py-2 mt-1 w-44 z-10">
               <li className="px-4 py-2 hover:text-[#319E48]">
                 <Link href="/pages/page1">Team</Link>
               </li>

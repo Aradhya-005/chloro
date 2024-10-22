@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import { useState, useEffect } from 'react';
 import Image from 'next/image';
@@ -10,30 +10,40 @@ const images = [
   { id: 3, src: '/assets/top-view-of-coconut-oil-in-bottle-on-coconut-half-VTN4936.jpg', alt: 'Image 3' },
 ];
 
+// Function to generate slides
+const getImageGroups = (imageArray) => {
+  const groups = [];
+  const length = imageArray.length;
+
+  for (let i = 0; i < length; i++) {
+    const group = [
+      imageArray[i],
+      imageArray[(i + 1) % length],
+      imageArray[(i + 2) % length],
+    ];
+    groups.push(group);
+  }
+  
+  return groups;
+};
+
 function FeaturedProduct() {
   const [currentIndex, setCurrentIndex] = useState(0);
-  const [isTransitioning, setIsTransitioning] = useState(false);
+  const imageGroups = getImageGroups(images);
 
-  // Automatically move to the next slide in an infinite loop
+  // Automatically move to the next slide every 3 seconds
   useEffect(() => {
     const interval = setInterval(() => {
-      setIsTransitioning(true);
-      setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
+      setCurrentIndex((prevIndex) => (prevIndex + 1) % imageGroups.length);
     }, 3000); // Change slide every 3 seconds
 
     return () => clearInterval(interval);
-  }, []);
-
-  useEffect(() => {
-    if (isTransitioning) {
-      setTimeout(() => setIsTransitioning(false), 500); // Reset after animation duration
-    }
-  }, [currentIndex]);
+  }, [imageGroups.length]);
 
   return (
     <>
-      <div className="flex flex-row bg-[#023A15] h-[600px] pl-24 pr-9 py-40">
-        <div className="flex-[3] text-white flex flex-col justify-center p-4">
+      <div className="flex flex-row bg-[#023A15] h-[600px] pl-24 pr-9 pt-36 pb-40 gap-28">
+        <div className="flex-[3] text-white flex flex-col justify-center p-4 max-w-[350px]">
           <div>
             <h1 className="text-[50px] tracking-wider font-light font-cormorantGaramond">
               Our <span>Product</span>
@@ -43,7 +53,7 @@ function FeaturedProduct() {
                 backgroundImage: `url(${Line})`,
                 width: '300px',
                 height: 'auto',
-                zIndex:'10',
+                zIndex: '10',
                 backgroundSize: 'contain',
                 backgroundRepeat: 'no-repeat',
                 marginTop: '-10px', // Adjust this as needed
@@ -56,42 +66,45 @@ function FeaturedProduct() {
         </div>
 
         {/* Carousel */}
-        <div className="flex-[7] relative overflow-hidden h-[400px]">
+        <div className="flex-[7] relative overflow-hidden h-[500px]">
           <div
-            className={`flex transition-transform duration-500 ease-in-out ${
-              isTransitioning ? 'transition-all' : ''
-            }`}
+            className="flex transition-transform duration-500 ease-in-out h-full"
             style={{
-              transform: `translateX(-${currentIndex * 33.33}%)`,
+              transform: `translateX(-${currentIndex * 100}%)`,
             }}
           >
-            {images.map((image) => (
-              <div key={image.id} className="w-1/3 flex-shrink-0 p-2">
-                <Image
-                  width={300}
-                  height={400}
-                  src={image.src}
-                  alt={image.alt}
-                  style={{ borderRadius: '300px 300px 0px 0px' }}
-                  className="w-full h-full object-cover rounded-lg"
-                />
+            {imageGroups.map((group, groupIndex) => (
+              <div key={groupIndex} className="min-w-full flex justify-center gap-10">
+                {group.map((image) => (
+                  <div key={image.id} className="relative w-[330px] h-[330px] flex-shrink">
+                    <Image
+                      src={image.src}
+                      alt={image.alt}
+                      layout="fill"
+                      objectFit="cover"
+                      style={{ borderRadius: '300px 300px 0px 0px' }}
+                      className="rounded-lg"
+                    />
+                  </div>
+                ))}
               </div>
             ))}
           </div>
 
           {/* Bottom dots */}
-          <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex space-x-2">
-            {images.map((_, dotIndex) => (
+          <div className="absolute left-1/2 transform -translate-x-1/2  flex space-x-2 bottom-28"> {/* Adjusted position */}
+            {imageGroups.map((_, dotIndex) => (
               <div
                 key={dotIndex}
                 onClick={() => setCurrentIndex(dotIndex)}
-                className={`w-3 h-3 rounded-full cursor-pointer ${
-                  currentIndex === dotIndex ? 'bg-blue-500' : 'bg-gray-300'
+                className={`w-2 h-2 rounded-full cursor-pointer ${
+                  currentIndex === dotIndex ? "bg-white" : "bg-[#3c6b4c]"
                 }`}
               />
             ))}
           </div>
         </div>
+
       </div>
     </>
   );

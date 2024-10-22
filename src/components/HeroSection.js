@@ -1,25 +1,79 @@
 import HeroCarousel from "./HeroCarousel";
-import HeroBackgroundImage from '../../public/assets/Artboard-2overlay_.png'
+import HeroBackgroundImage from "../../public/assets/Artboard-2overlay_.png";
+import Asset_6 from "../../public/assets/Asset-6_2.png";
+import Asset_4 from "../../public/assets/Asset-4_2.png";
 
 function HeroSection() {
   return (
     <>
-      <section className="flex flex-row bg-[#023A15] h-screen pl-44 pt-28 " style={{backgroundImage:`url(${HeroBackgroundImage})`}}>
-        <div className="text-[#FFFFFF] text-[75px] tracking-wider">
-          <h1 className="font-cormorantGaramond font-light">
-            A whole <span className="italic font-montserrat font-light hover:text-black">new</span>
-          </h1>
-          <h1 className="font-cormorantGaramond font-light">
-            <span className="italic font-montserrat font-thin hover:text-black">world</span>, a whole
-          </h1>
-          <h1 className="font-cormorantGaramond font-light">
-            <span className="italic font-montserrat font-light hover:text-black">new look</span>
-          </h1>
+      <section className="relative flex flex-row bg-[#023A15] h-screen pl-44 pt-24 justify-between gap-12 z-0">
+        {/* Background Image Div */}
+        <div className="max-w-[535px]">
+        <div
+          className="absolute -top-10 left-0 w-[100%] h-[100vh] bg-no-repeat bg-cover z-1"
+          style={{
+            backgroundImage: `url(${HeroBackgroundImage.src})`,
+            backgroundPosition: "center",
+            backgroundSize: "cover",
+          }}
+        ></div>
 
-          
+        {/* Foreground Text */}
+        <div className="relative z-10 text-[#FFFFFF] text-[65px] tracking-wider leading-[80px] group">
+  {/* Div for Background Image behind "A whole new" */}
+  <div className="relative inline-block">
+    {/* Background behind both "A whole new" */}
+    <div
+      className="absolute top-0 w-full h-full bg-no-repeat bg-contain z-0"
+      style={{
+        backgroundImage: `url(${Asset_6.src})`,
+        backgroundPosition: "center",
+        backgroundSize: "contain",
+        transform: "scale(1.4) translateX(10%)", // Makes image larger and shifts left
+      }}
+    ></div>
+    <p className="relative z-10 ">
+      A whole{" "}
+      <span className="relative group-hover:text-black transition duration-300  italic antialiased font-[400]">
+        new
+      </span>
+    </p>
+  </div>
 
+  <p>
+    <span className="group-hover:text-black transition duration-300 italic">
+      world
+    </span>
+    , a whole
+  </p>
+
+  {/* Div for "new look" with Background Image */}
+  <div className="relative inline-block ">
+    <p className="relative z-10">
+      <span className="group-hover:text-black transition duration-300 italic">
+        new look
+      </span>
+    </p>
+    <div
+      className="absolute top-[24px] left-0 w-full h-full bg-no-repeat bg-contain z-0"
+      style={{
+        backgroundImage: `url(${Asset_4.src})`,
+        backgroundPosition: "center",
+        backgroundSize: "contain",
+        transform: "scale(1.1)", // Scales down the image slightly
+      }}
+    ></div>
+  </div>
+  <p className="text-lg tracking-wide pt-11 pb-8 text-[#FFFFFF82]">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
+  <button className="px-12 leading-6 py-5 bg-white text-black uppercase rounded-full font-bold text-[15px] justify-center items-center tracking-normal hover:bg-[#023A15] hover:text-white border-white border-[1px]">Discover more</button>
+</div>
         </div>
-        <HeroCarousel/>
+
+
+        {/* Hero Carousel */}
+        <div className="relative z-10 pr-9 ">
+          <HeroCarousel />
+        </div>
       </section>
     </>
   );
