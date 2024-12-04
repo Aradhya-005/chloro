@@ -60,7 +60,7 @@ function HeroSection() {
               ></div>
             </div>
             <p className="text-[16px] leading-7 tracking-wide pt-11 pb-8 text-[#FFFFFF82]">
-            Discover the power of nature's best ingredients, carefully crafted for your skin. 
+            Discover the power of natures best ingredients, carefully crafted for your skin. 
             Experience the ultimate glow with our premium, organic skincare solutions.
             </p>
             <button className="flex items-center gap-1 mt-9 px-6 py-5 text-sm  text-green-900 bg-white rounded-full font-extrabold">
