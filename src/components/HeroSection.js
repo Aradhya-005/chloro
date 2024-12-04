@@ -14,7 +14,7 @@ function HeroSection() {
           
 
           {/* Foreground Text */}
-          <div className="relative z-10 text-[#FFFFFF] text-[55px] tracking-wider leading-[80px] group">
+          <div className="relative z-10 text-[#FFFFFF] text-[50px] tracking-wider leading-[80px] group">
             {/* Div for Background Image behind "A whole new" */}
             <div className="relative inline-block">
               {/* Background behind both "A whole new" */}
