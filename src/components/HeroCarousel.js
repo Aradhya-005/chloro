@@ -37,9 +37,9 @@ export default function HeroCarousel() {
 
   return (
     <>
-      <div className="relative w-full max-w-3xl mx-auto">
+      <div className="relative w-full max-w-3xl mx-auto ">
         {/* Carousel container */}
-        <div className="overflow-hidden h-[650px]">
+        <div className="overflow-hidden h-[450px] ">
           <div
             className="flex transition-transform duration-500 ease-in-out"
             style={{
@@ -49,10 +49,10 @@ export default function HeroCarousel() {
             {imageGroups.map((group, groupIndex) => (
               <div
                 key={groupIndex}
-                className="min-w-full flex mb-4 gap-11 justify-center"
+                className="min-w-full flex  gap-11 justify-center"
               >
                 {group.map((image, imgIndex) => (
-                  <div key={imgIndex} className="relative w-[300px] h-[450px]">
+                  <div key={imgIndex} className="relative w-[320px] h-[450px]">
                     <Image
                       src={image}
                       alt={`Slide image ${imgIndex + 1}`}
@@ -68,7 +68,7 @@ export default function HeroCarousel() {
         </div>
 
         {/* Dot indicators */}
-        <div className="absolute bottom-40 left-1/2 transform -translate-x-1/2 flex space-x-3">
+        <div className="absolute -bottom-7 left-1/2 transform -translate-x-1/2 flex space-x-3 ">
           {imageGroups.map((_, index) => (
             <button
               key={index}

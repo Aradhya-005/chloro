@@ -8,17 +8,10 @@ import Image from "next/image";
 function HeroSection() {
   return (
     <>
-      <section className="relative flex flex-row bg-[#023A15] h-screen pl-44 pt-24 justify-between gap-12 z-0">
+      <section className="relative flex flex-row bg-[#023A15] px-44  h-[90vh] w-full pt-28">
         {/* Background Image Div */}
-        <div className="max-w-[535px] h-screen">
-          <div
-            className="absolute -top-24 right-0 w-[96%] h-full bg-no-repeat bg-cover z-1 justify-center"
-            style={{
-              backgroundImage: `url(${HeroBackgroundImage.src})`,
-              backgroundPosition: "center",
-              backgroundSize: "cover",
-            }}
-          ></div>
+        <div className="relative max-w-[535px]">
+          
 
           {/* Foreground Text */}
           <div className="relative z-10 text-[#FFFFFF] text-[55px] tracking-wider leading-[80px] group">
@@ -65,7 +58,6 @@ function HeroSection() {
                   transform: "scale(1.1)", // Scales down the image slightly
                 }}
               ></div>
-
             </div>
             <p className="text-[16px] leading-7 tracking-wide pt-11 pb-8 text-[#FFFFFF82]">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
@@ -79,7 +71,7 @@ function HeroSection() {
         </div>
 
         {/* Hero Carousel */}
-        <div className="relative z-10 pr-9 ">
+        <div className="relative z-10 -right-36 ">
           <HeroCarousel />
         </div>
       </section>
