@@ -5,9 +5,9 @@ import FeaturedProduct from "@/components/FeaturedProduct";
 import Services from "@/components/Services";
 import Review from "@/components/Review";
 import ExpertSkincare from "@/components/ExpertSkincare";
-import VIsitStore from "@/components/VIsitStore";
 import BlogSection from "@/components/BlogSection";
 import Footer from "@/components/Footer";
+import Visit from "@/components/Visit";
 export default function Home() {
   return (
     <>
@@ -30,7 +30,7 @@ export default function Home() {
     <Services />
     <Review />
     <ExpertSkincare />
-    <VIsitStore />
+   <Visit/>
     <BlogSection/>
     <Footer/>
   </div>

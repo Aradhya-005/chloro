@@ -33,7 +33,7 @@ const images = [
   },
 ];
 
-function VisitStore() {
+function Visit() {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   // Automatically move to the next slide every 3 seconds
@@ -118,4 +118,4 @@ function VisitStore() {
   );
 }
 
-export default VisitStore;
+export default Visit;
