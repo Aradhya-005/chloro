@@ -62,7 +62,7 @@ function HeroSection() {
                   backgroundImage: `url(${Asset_4.src})`,
                   backgroundPosition: "center",
                   backgroundSize: "contain",
-                  transform: "scale(1.1)", // Scales down the image slightly
+                  transform: "scale(0)", // Scales down the image slightly
                 }}
               ></div>
             </div>
