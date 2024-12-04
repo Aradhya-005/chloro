@@ -57,9 +57,10 @@ function Content() {
             </div>
           </div>
 
-          <p className="py-9   font-[25px] leading-9 text-[#023A15] tracking-wide">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vitae
-            rutrum neque. Duis tincidunt euismod aliquam.
+          <p className="py-9  text-[18px]  font-[25px] leading-9 text-[#023A15] tracking-wide">
+          Discover the essence of beauty with our premium products. 
+  Embrace a healthier, radiant you every day.
+
           </p>
         </div>
 

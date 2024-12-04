@@ -9,45 +9,46 @@ const servicesData = [
     id: 1,
     img: "/assets/woman-relaxing-with-a-facial-mask-at-the-spa-FT2XZH6.jpg",
     title: "Face Scrub",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    description: "Exfoliate your skin for a smoother, brighter complexion.",
     link: "/",
   },
   {
     id: 2,
     img: "/assets/facial-massage-beauty-treatment-CV8BDTP.jpg",
     title: "Face Massage",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    description: "Relax and rejuvenate with a soothing face massage.",
     link: "/",
   },
   {
     id: 3,
     img: "/assets/massage-therapist-massaging-woman-AWN6QAT.jpg",
     title: "Body Massage",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    description: "Release tension and improve circulation with a full-body massage.",
     link: "/",
   },
   {
     id: 4,
     img: "/assets/close-up-of-cosmetic-botox-injection-RGZTDV3.jpg",
     title: "Botox Filler",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    description: "Smooth out fine lines and wrinkles for a youthful look.",
     link: "/",
   },
   {
     id: 5,
     img: "/assets/pedicure-LDJ5TEU.jpg",
     title: "Pedicure",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    description: "Pamper your feet with a relaxing and rejuvenating pedicure.",
     link: "/",
   },
   {
     id: 6,
     img: "/assets/facial-beauty-treatment-in-spa-CSVTMH2.jpg",
     title: "Face Cleanser",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    description: "Deeply cleanse and refresh your face with natural ingredients.",
     link: "/",
   },
 ];
+
 
 function Services() {
   return (
@@ -58,8 +59,8 @@ function Services() {
             Our Service
           </h1>
           <p className="text-center mb-8 text-[20px] max-w-[630px]">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
-            tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
+          Discover our range of treatments designed to rejuvenate and refresh your skin, body, and mind.
+
           </p>
         </div>
         <div className="flex flex-wrap gap-8 justify-center ">
@@ -104,16 +105,18 @@ function Services() {
 
           {/* Div positioned over the image */}
           <div className="absolute w-[520px] h-[480px] bg-[#023A15] top-72 left-[908px] shadow-lg text-white">
-          <div className="p-20 ">
-          <h1 className="text-[60px] font-cormorantGaramond font-light tracking-wider">Our Story</h1>
-            <p className="mt-7 font-[25px] ">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam
-              accumsan arcu est, at lobortis nulla porta eu. Aenean vel dolor
-              enim. Etiam aliquam mauris eros.
-            </p>
-          <button className="uppercase bg-white px-8 py-4 text-[#023A15] font-semibold rounded-full mt-10 ">Read More</button>
-          </div>
-          </div>
+  <div className="p-20">
+    <h1 className="text-[60px] font-cormorantGaramond font-light tracking-wider">Our Story</h1>
+    <p className="mt-7 font-[25px]">
+      Discover the origins of our brand, rooted in passion and care.
+      From humble beginnings to a commitment to sustainability, our journey has been one of growth and purpose.
+    </p>
+    <button className="uppercase bg-white px-8 py-4 text-[#023A15] font-semibold rounded-full mt-10">
+      Read More
+    </button>
+  </div>
+</div>
+
 
           {/* Div positioned below the green div */}
           {/* <div className="absolute w-[520px] h-[180px] bg-transparent bottom-20 left-[908px] px-24 shadow-lg flex flex-row gap-7 font-montserrat">

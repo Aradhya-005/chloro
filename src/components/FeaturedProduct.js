@@ -77,8 +77,8 @@ function FeaturedProduct() {
             />
           </div>
           <p className="mt-4 mb-6">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
-            tellus.
+          Discover our top-quality skincare products designed to rejuvenate and refresh.
+
           </p>
           <button className="px-6 py-4 bg-white text-black uppercase max-w-40 rounded-full font-bold text-[15px]">
             Shop now
