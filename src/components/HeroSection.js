@@ -1,7 +1,9 @@
 import HeroCarousel from "./HeroCarousel";
+import Arrow from  '../../public/assets/arrow.svg';
 import HeroBackgroundImage from "../../public/assets/Artboard-2overlay_.png";
 import Asset_6 from "../../public/assets/Asset-6_2.png";
 import Asset_4 from "../../public/assets/Asset-4_2.png";
+import Image from "next/image";
 
 function HeroSection() {
   return (
@@ -65,8 +67,10 @@ function HeroSection() {
     ></div>
   </div>
   <p className="text-lg tracking-wide pt-11 pb-8 text-[#FFFFFF82]">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
-  <button className="px-12 leading-6 py-5 bg-white text-black uppercase rounded-full font-bold text-[15px] justify-center items-center tracking-normal hover:bg-[#023A15] hover:text-white border-white border-[1px]">Discover more</button>
-</div>
+  <button className="flex items-center gap-1 mt-9 px-6 py-5 text-sm  text-green-900 bg-white rounded-full font-extrabold">
+        <span className="text-green-900">➤</span>
+        DISCOVER MORE
+      </button></div>
         </div>
 
 

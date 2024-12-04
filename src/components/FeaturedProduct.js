@@ -1,13 +1,28 @@
 "use client";
 
-import { useState, useEffect } from 'react';
-import Image from 'next/image';
-import Line from '../../public/assets/Asset-4_2.png';
+import { useState, useEffect } from "react";
+import Image from "next/image";
+import Line from "../../public/assets/Asset-4_2.png";
 
 const images = [
-  { id: 1, src: '/assets/lifting-anti-wrinkle-collagen-patches-under-eyes-RB522JG.jpg', alt: 'Image 1' },
-  { id: 2, src: '/assets/composition-of-a-brown-glass-dropper-bottle-with-a-NWSPPKG.jpg', alt: 'Image 2' },
-  { id: 3, src: '/assets/top-view-of-coconut-oil-in-bottle-on-coconut-half-VTN4936.jpg', alt: 'Image 3' },
+  {
+    id: 1,
+    title: "Eye Treatment",
+    src: "/assets/lifting-anti-wrinkle-collagen-patches-under-eyes-RB522JG.jpg",
+    alt: "Image 1",
+  },
+  {
+    id: 2,
+    title: "Skin Serum",
+    src: "/assets/composition-of-a-brown-glass-dropper-bottle-with-a-NWSPPKG.jpg",
+    alt: "Image 2",
+  },
+  {
+    id: 3,
+    title: "Coco oil",
+    src: "/assets/top-view-of-coconut-oil-in-bottle-on-coconut-half-VTN4936.jpg",
+    alt: "Image 3",
+  },
 ];
 
 // Function to generate slides
@@ -23,7 +38,7 @@ const getImageGroups = (imageArray) => {
     ];
     groups.push(group);
   }
-  
+
   return groups;
 };
 
@@ -46,23 +61,28 @@ function FeaturedProduct() {
         <div className="flex-[3] text-white flex flex-col justify-center p-4 max-w-[350px]">
           <div>
             <h1 className="text-[50px] tracking-wider font-light font-cormorantGaramond">
-              Our <span>Product</span>
+              Featured <span>Product</span>
             </h1>
             <div
               style={{
                 backgroundImage: `url(${Line})`,
-                width: '300px',
-                height: 'auto',
-                zIndex: '10',
-                backgroundSize: 'contain',
-                backgroundRepeat: 'no-repeat',
-                marginTop: '-10px', // Adjust this as needed
+                width: "300px",
+                height: "auto",
+                zIndex: "10",
+                backgroundSize: "contain",
+                backgroundRepeat: "no-repeat",
+                marginTop: "-10px", // Adjust this as needed
               }}
               className="mt-2"
             />
           </div>
-          <p className="mt-4 mb-6">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus.</p>
-          <button className="px-6 py-4 bg-white text-black uppercase max-w-40 rounded-full font-bold text-[15px]">Shop now</button>
+          <p className="mt-4 mb-6">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
+            tellus.
+          </p>
+          <button className="px-6 py-4 bg-white text-black uppercase max-w-40 rounded-full font-bold text-[15px]">
+            Shop now
+          </button>
         </div>
 
         {/* Carousel */}
@@ -74,25 +94,37 @@ function FeaturedProduct() {
             }}
           >
             {imageGroups.map((group, groupIndex) => (
-              <div key={groupIndex} className="min-w-full flex justify-center gap-10">
+              <div
+                key={groupIndex}
+                className="min-w-full flex justify-center gap-10"
+              >
                 {group.map((image) => (
-                  <div key={image.id} className="relative w-[330px] h-[330px] flex-shrink">
+                  <div
+                    key={image.id}
+                    className="relative w-[330px] h-[330px] flex-shrink"
+                  >
                     <Image
                       src={image.src}
                       alt={image.alt}
                       layout="fill"
                       objectFit="cover"
-                      style={{ borderRadius: '300px 300px 0px 0px' }}
+                      style={{ borderRadius: "300px 300px 0px 0px" }}
                       className="rounded-lg"
                     />
+                    
                   </div>
+                   
+           
                 ))}
+                 
               </div>
             ))}
           </div>
 
           {/* Bottom dots */}
-          <div className="absolute left-1/2 transform -translate-x-1/2  flex space-x-2 bottom-28"> {/* Adjusted position */}
+          <div className="absolute left-1/2 transform -translate-x-1/2  flex space-x-2 bottom-28">
+            {" "}
+            {/* Adjusted position */}
             {imageGroups.map((_, dotIndex) => (
               <div
                 key={dotIndex}
@@ -104,7 +136,6 @@ function FeaturedProduct() {
             ))}
           </div>
         </div>
-
       </div>
     </>
   );
