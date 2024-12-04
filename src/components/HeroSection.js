@@ -10,9 +10,9 @@ function HeroSection() {
     <>
       <section className="relative flex flex-row bg-[#023A15] h-screen pl-44 pt-24 justify-between gap-12 z-0">
         {/* Background Image Div */}
-        <div className="max-w-[535px]">
+        <div className="max-w-[535px] h-screen">
           <div
-            className="absolute -top-10 left-0 w-[100%] h-[100vh] bg-no-repeat bg-cover z-1"
+            className="absolute -top-32 right-0 w-[90%] h-full bg-no-repeat bg-cover z-1 justify-center"
             style={{
               backgroundImage: `url(${HeroBackgroundImage.src})`,
               backgroundPosition: "center",
@@ -62,9 +62,10 @@ function HeroSection() {
                   backgroundImage: `url(${Asset_4.src})`,
                   backgroundPosition: "center",
                   backgroundSize: "contain",
-                  transform: "scale(0)", // Scales down the image slightly
+                  transform: "scale(1.1)", // Scales down the image slightly
                 }}
               ></div>
+
             </div>
             <p className="text-[16px] leading-7 tracking-wide pt-11 pb-8 text-[#FFFFFF82]">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
