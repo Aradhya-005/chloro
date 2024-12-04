@@ -52,7 +52,7 @@ export default function HeroCarousel() {
                 className="min-w-full flex mb-4 gap-11 justify-center"
               >
                 {group.map((image, imgIndex) => (
-                  <div key={imgIndex} className="relative w-[360px] h-[400px]">
+                  <div key={imgIndex} className="relative w-[300px] h-[450px]">
                     <Image
                       src={image}
                       alt={`Slide image ${imgIndex + 1}`}

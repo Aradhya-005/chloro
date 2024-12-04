@@ -66,7 +66,7 @@ function HeroSection() {
                 }}
               ></div>
             </div>
-            <p className="text-lg tracking-wide pt-11 pb-8 text-[#FFFFFF82]">
+            <p className="text-[16px] leading-7 tracking-wide pt-11 pb-8 text-[#FFFFFF82]">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
               tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
             </p>
