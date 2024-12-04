@@ -68,7 +68,7 @@ export default function HeroCarousel() {
         </div>
 
         {/* Dot indicators */}
-        <div className="absolute bottom-20 left-1/2 transform -translate-x-1/2 flex space-x-3">
+        <div className="absolute bottom-40 left-1/2 transform -translate-x-1/2 flex space-x-3">
           {imageGroups.map((_, index) => (
             <button
               key={index}
