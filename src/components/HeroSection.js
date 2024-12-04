@@ -12,7 +12,7 @@ function HeroSection() {
         {/* Background Image Div */}
         <div className="max-w-[535px] h-screen">
           <div
-            className="absolute -top-32 right-0 w-[90%] h-full bg-no-repeat bg-cover z-1 justify-center"
+            className="absolute -top-24 right-0 w-[96%] h-full bg-no-repeat bg-cover z-1 justify-center"
             style={{
               backgroundImage: `url(${HeroBackgroundImage.src})`,
               backgroundPosition: "center",
