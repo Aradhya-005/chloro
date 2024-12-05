@@ -68,11 +68,10 @@ function Visit() {
               Visit Our Store to Buy Beauty Products
             </h1>
             <p className="mb-8 text-[16px] max-w-[480px] text-white leading-relaxed">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin
-              lobortis sed sapien in pretium. Donec tincidunt, quam vestibulum
-              ultricies egestas, dolor sem laoreet orci, quis finibus justo quam
-              at nibh.
-            </p>
+  Explore our exclusive collection of beauty products crafted to enhance your
+  natural glow. From skincare essentials to makeup must-haves, find everything
+  you need to look and feel your best.
+</p>
             <button className="px-6 py-4 bg-white text-black uppercase rounded-full font-bold text-[15px] hover:bg-transparent hover:border hover:border-white hover:text-white transition duration-300">
               Shop Now
             </button>

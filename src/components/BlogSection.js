@@ -31,8 +31,8 @@ function BlogSection() {
             Blog and News
           </h1>
           <p className="text-center mb-8 text-[18px] max-w-[650px] text-[#023A15] py-4 tracking-wide leading-8">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
-            tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
+          Discover insightful articles, the latest updates from our community. Stay informed and explore topics that
+            matter most to you.
           </p>
         </div>
         <div className="flex flex-wrap gap-8 justify-center pb-44">
