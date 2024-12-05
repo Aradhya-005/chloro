@@ -23,7 +23,8 @@ const servicesData = [
     id: 3,
     img: "/assets/massage-therapist-massaging-woman-AWN6QAT.jpg",
     title: "Body Massage",
-    description: "Release tension and improve circulation with a full-body massage.",
+    description:
+      "Release tension  with a full-body massage.",
     link: "/",
   },
   {
@@ -44,11 +45,11 @@ const servicesData = [
     id: 6,
     img: "/assets/facial-beauty-treatment-in-spa-CSVTMH2.jpg",
     title: "Face Cleanser",
-    description: "Deeply cleanse and refresh your face with natural ingredients.",
+    description:
+      "Deeply cleanse and refresh your face with natural ingredients.",
     link: "/",
   },
 ];
-
 
 function Services() {
   return (
@@ -59,34 +60,32 @@ function Services() {
             Our Service
           </h1>
           <p className="text-center mb-8 text-[20px] max-w-[630px]">
-          Discover our range of treatments designed to rejuvenate and refresh your skin, body, and mind.
-
+            Discover our range of treatments designed to rejuvenate and refresh
+            your skin, body, and mind.
           </p>
         </div>
         <div className="flex flex-wrap gap-8 justify-center ">
           {servicesData.map((service) => (
-            <div key={service.id} className="flex flex-col items-center ">
-              <Image
-                src={service.img}
-                alt={service.title}
-                className="mb-4 "
-                width={410}
-                height={280}
-                style={{ borderRadius: "300px 300px 0px 0px" }}
-              />
-              <div className="shadow-lg rounded-lg bg-white p-8 w-full max-w-[360px] text-center -mt-14 ">
-             
+            <div key={service.id} className="flex flex-col items-center group ">
+              <div className="z-0  overflow-hidden rounded-t-[300px]">
+                <Image
+                  src={service.img}
+                  alt={service.title}
+                  className="transform transition duration-500 group-hover:scale-110"
+                  width={410}
+                  height={280}
+                />
+              </div>
+              <div className="shadow-lg rounded-lg bg-white p-8 w-full max-w-[360px] text-center -mt-14 z-10 ">
                 {/* Smaller width for the text box */}
-                <h1 className="text-3xl  font-cormorantGaramond font-thin  text-[#023A15]">
+                <h1 className="text-3xl  font-cormorantGaramond font-thin  text-[#023A15] group-hover:text-blue-500">
                   {service.title}
                 </h1>
-                <p className=" mb-4 text-[18px] py-6">
-                  {service.description}
-                </p>
+                <p className=" mb-4 text-[18px] py-6">{service.description}</p>
                 <Link
                   href={service.link}
-                  style={{justifyContent:'center', alignItems:'center'}}
-                  className="text-[#319E48] text-[15px] underline  uppercase font-semibold  underline-offset-4 "
+                  style={{ justifyContent: "center", alignItems: "center" }}
+                  className="text-[#319E48] text-[15px] underline  uppercase font-semibold  underline-offset-4 hover:text-black "
                 >
                   Learn more &#8594;
                 </Link>
@@ -105,18 +104,20 @@ function Services() {
 
           {/* Div positioned over the image */}
           <div className="absolute w-[520px] h-[480px] bg-[#023A15] top-72 left-[908px] shadow-lg text-white">
-  <div className="p-20">
-    <h1 className="text-[60px] font-cormorantGaramond font-light tracking-wider">Our Story</h1>
-    <p className="mt-7 font-[25px]">
-      Discover the origins of our brand, rooted in passion and care.
-      From humble beginnings to a commitment to sustainability, our journey has been one of growth and purpose.
-    </p>
-    <button className="uppercase bg-white px-8 py-4 text-[#023A15] font-semibold rounded-full mt-10">
-      Read More
-    </button>
-  </div>
-</div>
-
+            <div className="p-20">
+              <h1 className="text-[60px] font-cormorantGaramond font-light tracking-wider">
+                Our Story
+              </h1>
+              <p className="mt-7 font-[25px]">
+                Discover the origins of our brand, rooted in passion and care.
+                From humble beginnings to a commitment to sustainability, our
+                journey has been one of growth and purpose.
+              </p>
+              <button className="uppercase bg-white px-8 py-4 text-[#023A15] font-semibold rounded-full mt-10">
+                Read More
+              </button>
+            </div>
+          </div>
 
           {/* Div positioned below the green div */}
           {/* <div className="absolute w-[520px] h-[180px] bg-transparent bottom-20 left-[908px] px-24 shadow-lg flex flex-row gap-7 font-montserrat">
@@ -146,7 +147,6 @@ function Services() {
               backgroundImage: `url(${Asset_2.src})`,
             }}
           />
-         
         </div>
       </section>
     </>

@@ -39,7 +39,7 @@ function BlogSection() {
           {servicesData.map((service) => (
             <div
               key={service.id}
-              className="flex flex-col items-center bg-[#023A15] max-w-[420px]"
+              className="flex flex-col items-center bg-[#023A15] max-w-[420px] group"
             >
               <div className="relative w-full h-0 pb-[calc(226px+40px)]">
                 <Image
@@ -47,8 +47,9 @@ function BlogSection() {
                   alt={service.title}
                   layout="fill"
                   objectFit="cover"
-                  className="rounded-lg p-5"
+                  className="rounded-lg p-5 transition-transform duration-500 ease-in-out hover:rotate-3 cursor-pointer group-hover:scale-105"
                 />
+                
               </div>
               <div className="text-left p-5">
                 <p className="text-[30px] font-cormorantGaramond font-thin text-white">

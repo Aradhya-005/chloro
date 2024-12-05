@@ -73,7 +73,7 @@ function Visit() {
               ultricies egestas, dolor sem laoreet orci, quis finibus justo quam
               at nibh.
             </p>
-            <button className="px-6 py-4 bg-white text-black uppercase rounded-full font-bold text-[15px] hover:bg-[#567C49] hover:text-white transition duration-300">
+            <button className="px-6 py-4 bg-white text-black uppercase rounded-full font-bold text-[15px] hover:bg-transparent hover:border hover:border-white hover:text-white transition duration-300">
               Shop Now
             </button>
           </div>

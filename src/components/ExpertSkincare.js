@@ -27,29 +27,37 @@ function ExpertSkincare() {
           </div>
         </div>
         <div className="details-part md:w-1/2 flex flex-col justify-center items-start text-center md:text-left">
-          <h2 className="text-[60px] font-thin text-[#023A15] tracking-wider mb-4 font-cormorantGaramond">
+          <h2 className="text-[50px] font-thin text-[#023A15] tracking-wider mb-4 font-cormorantGaramond">
             Expert Skincare For Your Beautiful Skin
           </h2>
           <p className="mb-8 text-[16px] max-w-[480px] text-[#023A15] tracking-wider leading-loose">
             Your skin deserves the best care. At our skincare clinic, we focus on providing treatments tailored to your unique needs, using only the finest natural ingredients. Restore your skin’s health and radiance with our expert care.
           </p>
-          <p className="mb-2 text-[16px] text-[#023A15]">
-  Expert results.
-</p>
-<p className="mb-2 text-[16px] text-[#023A15]">
-  Eco-friendly solutions.
-</p>
-<p className="mb-2 text-[16px] text-[#023A15]">
-  Personalized care.
-</p>
-<p className="mb-2 text-[16px] text-[#023A15]">
-  Confidence first.
-</p>
-<p className="mb-6 text-[16px] text-[#023A15]">
-  Healthy glow.
-</p>
+          <div>
+  <p className="mb-2 text-[16px] text-[#023A15] flex items-center">
+    <span className="text-[#023A15] text-2xl mr-3">&#10003;</span>
+    Expert results.
+  </p>
+  <p className="mb-2 text-[16px] text-[#023A15] flex items-center">
+    <span className="text-[#023A15] text-2xl mr-3">&#10003;</span>
+    Eco-friendly solutions.
+  </p>
+  <p className="mb-2 text-[16px] text-[#023A15] flex items-center">
+    <span className="text-[#023A15] text-2xl mr-3">&#10003;</span>
+    Personalized care.
+  </p>
+  <p className="mb-2 text-[16px] text-[#023A15] flex items-center">
+    <span className="text-[#023A15] text-2xl mr-3">&#10003;</span>
+    Confidence first.
+  </p>
+  <p className="mb-6 text-[16px] text-[#023A15] flex items-center">
+    <span className="text-[#023A15] text-2xl mr-3">&#10003;</span>
+    Healthy glow.
+  </p>
+</div>
 
-          <button className="mt-4 px-6 py-2 bg-[#023A15] text-white rounded-md hover:bg-[#035723]">
+
+          <button className="mt-4 px-7 uppercase tracking-wider font-bold py-3 bg-[#023A15] text-white rounded-full  hover:bg-transparent hover:border hover:border-[#023A15] hover:text-[#023A15]">
             Learn More
           </button>
         </div>
