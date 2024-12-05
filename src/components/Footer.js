@@ -13,10 +13,6 @@ function Footer() {
           <h1 className="text-4xl font-cormorantGaramond mb-4"><div className="w-24">
           <Image src={Logo} alt="logo" />
         </div></h1>
-          <p className="text-sm">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in
-            nibh vehicula.
-          </p>
         </div>
 
         {/* Contact Information */}
