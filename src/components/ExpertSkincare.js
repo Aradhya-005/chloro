@@ -7,12 +7,12 @@ function ExpertSkincare() {
     <>
       <section className="flex flex-col md:flex-row justify-between items-center gap-24 px-44 bg-[#FDF5F3] py-40">
         <div className="images-part md:w-1/2 flex flex-col justify-center items-center">
-          <div className="first-img mb-5">
+          <div className="first-img mb-6">
             <Image
               className="rounded-[0px_300px_300px_0px]"
               src={FirstImg}
               width={600}
-              height={280}
+              height={290}
               alt="Natural Skincare"
             />
           </div>
@@ -21,7 +21,7 @@ function ExpertSkincare() {
               className="rounded-[300px_0px_0px_300px]"
               src={SecondImg}
               width={600}
-              height={280}
+              height={290}
               alt="Healthy Glow"
             />
           </div>
