@@ -63,7 +63,7 @@ function HeroSection() {
             Discover the power of natures best ingredients, carefully crafted for your skin. 
             Experience the ultimate glow with our premium, organic skincare solutions.
             </p>
-            <button className="flex items-center gap-1 mt-9 px-6 py-5 text-sm  text-green-900 bg-white rounded-full font-extrabold hover:bg-transparent hover:border hover:border-white hover:text-white">
+            <button className="flex items-center gap-1 mt-4 px-4 py-4 text-sm  text-green-900 bg-white rounded-full font-bold hover:bg-transparent hover:border hover:border-white hover:text-white">
               <span className="">➤</span>
               DISCOVER MORE
             </button>

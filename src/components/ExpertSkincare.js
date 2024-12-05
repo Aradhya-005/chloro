@@ -30,14 +30,14 @@ function ExpertSkincare() {
           <h2 className="text-[45px] font-thin text-[#023A15] tracking-wider mb-4 font-cormorantGaramond">
             Expert Skincare For Your Beautiful Skin
           </h2>
-          <p className="mb-8 text-[16px] max-w-[480px] text-[#023A15] tracking-wider leading-loose">
+          <p className="mb-8 text-[14px] max-w-[480px] text-[#023A15] tracking-wider leading-loose">
             Your skin deserves the best care. At our skincare clinic, we focus
             on providing treatments tailored to your unique needs, using only
             the finest natural ingredients. Restore your skin’s health and
             radiance with our expert care.
           </p>
           <div>
-            <p className="mb-2 text-[16px] text-[#023A15] flex items-center">
+            <p className="mb-2 text-[14px] text-[#023A15] flex items-center">
               <span className="text-[#023A15] text-2xl mr-3">&#10003;</span>
               Expert results.
             </p>

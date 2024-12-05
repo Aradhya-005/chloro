@@ -36,7 +36,7 @@ function Content() {
           <p className=" text-[18px] font-normal tracking-wide">
             Alive every moment.
           </p>
-          <h1 className="font-cormorantGaramond text-[55px] tracking-wider text-[#023A15]">
+          <h1 className="font-cormorantGaramond text-[45px] tracking-wider text-[#023A15]">
             Beauty is all about
           </h1>
 
@@ -51,7 +51,7 @@ function Content() {
                 top: "20px", // Adjust the top position to shift the background image down
               }}
             >
-              <h1 className="absolute left-0 right-0 flex items-center justify-center font-cormorantGaramond text-[55px] tracking-wider text-[#023A15]">
+              <h1 className="absolute left-0 right-0 flex items-center justify-center font-cormorantGaramond text-[45px] tracking-wider text-[#023A15]">
                 you.
               </h1>
             </div>
