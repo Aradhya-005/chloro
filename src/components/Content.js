@@ -22,7 +22,7 @@ function Content() {
           />
           {/* Background div for Organic Cream */}
           <div
-            className="relative h-[450px] w-[400px] bg-cover bg-no-repeat object-cover p-10px"
+            className="relative h-[410px] w-[360px] bg-cover bg-no-repeat object-cover p-10px"
             style={{
               backgroundImage: `url(${OrganicCream.src})`,
               borderRadius: "300px 300px 0px 0px",
@@ -57,7 +57,7 @@ function Content() {
             </div>
           </div>
 
-          <p className="py-9  text-[18px]  font-[25px] leading-9 text-[#023A15] tracking-wide">
+          <p className="py-9  text-[14px]  font-[25px] leading-9 text-[#023A15] tracking-wide">
           Discover the essence of beauty with our premium products. 
   Embrace a healthier, radiant you every day.
 
@@ -68,7 +68,7 @@ function Content() {
         <div className="relative flex-1 flex items-center justify-center">
           {/* Background div for Women */}
           <div
-            className="relative h-[450px] w-[400px] bg-cover bg-no-repeat object-cover p-10px"
+            className="relative h-[410px] w-[360px] bg-cover bg-no-repeat object-cover p-10px"
             style={{
               backgroundImage: `url(${Women.src})`,
               borderRadius: "300px 300px 0px 0px",

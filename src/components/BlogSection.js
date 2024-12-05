@@ -52,7 +52,7 @@ function BlogSection() {
                 
               </div>
               <div className="text-left p-5">
-                <p className="text-[30px] font-cormorantGaramond font-thin text-white">
+                <p className="text-[28px] font-cormorantGaramond font-thin text-white">
                   {service.description}
                 </p>
               </div>
@@ -68,7 +68,7 @@ function BlogSection() {
           ))}
         </div>
         <div className="max-w-[1200px] my-0 mx-auto py-11">
-          <h1 className="text-[60px] font-light text-center text-[#023A15] tracking-wider mb-8 font-cormorantGaramond">
+          <h1 className="text-[50px] font-light text-center text-[#023A15] tracking-wider mb-8 font-cormorantGaramond">
             Get the latest updates about our products and services
           </h1>
           <form className="flex flex-col md:flex-row justify-center items-center gap-4">

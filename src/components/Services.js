@@ -56,7 +56,7 @@ function Services() {
     <>
       <section className="bg-[#FDF5F3] py-40 ">
         <div className="flex flex-col items-center mb-8 ">
-          <h1 className="text-[60px] font-light text-center text-[#023A15] tracking-wider mb-4 font-cormorantGaramond">
+          <h1 className="text-[45px] font-light text-center text-[#023A15] tracking-wider mb-4 font-cormorantGaramond">
             Our Service
           </h1>
           <p className="text-center mb-8 text-[20px] max-w-[630px]">
@@ -113,7 +113,7 @@ function Services() {
                 From humble beginnings to a commitment to sustainability, our
                 journey has been one of growth and purpose.
               </p>
-              <button className="uppercase bg-white px-8 py-4 text-[#023A15] font-semibold rounded-full mt-10">
+              <button className="uppercase bg-white px-8 py-4 text-[#023A15] hover:border hover:border-white hover:text-white hover:bg-transparent font-semibold rounded-full mt-10">
                 Read More
               </button>
             </div>

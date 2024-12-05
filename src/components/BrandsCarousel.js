@@ -51,7 +51,7 @@ function BrandsCarousel() {
 
        <div className="text-white flex flex-col justify-center items-center ">
           <div className="py-20 flex items-center justify-center h-full">
-            <h1 className="text-[60px] font-thin text-white tracking-wider  font-cormorantGaramond leading-tight">
+            <h1 className="text-[50px] font-thin text-white tracking-wider  font-cormorantGaramond leading-tight">
               Our Products Also Available At
             </h1>
           </div>

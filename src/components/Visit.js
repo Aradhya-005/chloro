@@ -61,13 +61,13 @@ function Visit() {
         <div className="absolute inset-0 bg-[rgba(2,58,21)] bg-opacity-70 -z-10"></div>
 
         {/* Content */}
-        <div className="relative container mx-auto flex flex-col md:flex-row items-center px-4 h-full">
+        <div className="relative container gap-16 mx-auto flex flex-col md:flex-row items-center px-4 h-full">
           {/* Text Content */}
-          <div className="w-full md:w-1/2 pr-8 text-center md:text-left z-10">
-            <h1 className="text-[60px] font-thin text-white tracking-wider mb-6 font-cormorantGaramond leading-tight">
+          <div className=" text-center md:text-left z-10">
+            <h1 className="text-[45px] font-thin text-white tracking-wider mb-6 font-cormorantGaramond leading-tight">
               Visit Our Store to Buy Beauty Products
             </h1>
-            <p className="mb-8 text-[18px] max-w-[480px] text-white leading-relaxed">
+            <p className="mb-8 text-[16px] max-w-[480px] text-white leading-relaxed">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin
               lobortis sed sapien in pretium. Donec tincidunt, quam vestibulum
               ultricies egestas, dolor sem laoreet orci, quis finibus justo quam
@@ -79,11 +79,11 @@ function Visit() {
           </div>
 
           {/* Image Content */}
-          <div className="max-w[100%] ">
+          <div className=" z-0">
             <Image
-              width={600}
-              height={400}
-              className="h-full w-full object-cover rounded-[380px_380px_0_0]"
+              width={500}
+              style={{height:'auto', marginBottom:'-32px'}}
+              className=" w-full object-cover rounded-[380px_380px_0_0]"
               src={SerumImg}
               alt=""
             />
@@ -93,11 +93,11 @@ function Visit() {
 
       {/* Carousel */}
       <section>
-        <div className="flex transition-transform duration-700 ease-in-out h-full -mt-24 z-20 gap-2 justify-center">
+        <div className="flex transition-transform duration-700 ease-in-out h-full   gap-2 justify-center z-10">
           {getCurrentSlide().map((image) => (
             <div
               key={image.id}
-              className="relative w-[150px] h-[150px] flex-shrink"
+              className="relative w-[150px] h-[150px] flex-shrink -mt-[54px]"
             >
               <Image
                 src={image.src}

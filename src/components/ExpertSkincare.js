@@ -41,19 +41,19 @@ function ExpertSkincare() {
               <span className="text-[#023A15] text-2xl mr-3">&#10003;</span>
               Expert results.
             </p>
-            <p className="mb-2 text-[16px] text-[#023A15] flex items-center">
+            <p className="mb-2 text-[14px] text-[#023A15] flex items-center">
               <span className="text-[#023A15] text-2xl mr-3">&#10003;</span>
               Eco-friendly solutions.
             </p>
-            <p className="mb-2 text-[16px] text-[#023A15] flex items-center">
+            <p className="mb-2 text-[14px] text-[#023A15] flex items-center">
               <span className="text-[#023A15] text-2xl mr-3">&#10003;</span>
               Personalized care.
             </p>
-            <p className="mb-2 text-[16px] text-[#023A15] flex items-center">
+            <p className="mb-2 text-[14px] text-[#023A15] flex items-center">
               <span className="text-[#023A15] text-2xl mr-3">&#10003;</span>
               Confidence first.
             </p>
-            <p className="mb-6 text-[16px] text-[#023A15] flex items-center">
+            <p className="mb-6 text-[14px] text-[#023A15] flex items-center">
               <span className="text-[#023A15] text-2xl mr-3">&#10003;</span>
               Healthy glow.
             </p>
